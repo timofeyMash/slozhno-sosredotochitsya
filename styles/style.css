@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  font-family: IBM Plex Mono,sans-serif;
+  font-family: IBM Plex Mono, sans-serif;
   width: 1024px;
   background-color: var(--background-color);
   line-height: 23.4px;
