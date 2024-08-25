@@ -2,3 +2,301 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --accent-color: #ff0070;
+  --text-color: #F1B2CE;
+  --background-color: #000028;
+  --title-color: #DB00FF;
+  --header-image: url("/images/cover-image-dark.png");
+  --pseudo-corner: #ff0070;
+  --section-title-color: #ff0070;
+}
+
+@media (width <= 785px) and (width > 392px) {
+  html .content {
+    width: 768px;
+  }
+
+  html .header {
+    width: 768px;
+    height: 1024px;
+  }
+
+  html .footer {
+    width: 768px;
+    height: 1024px;
+  }
+
+  html .page {
+    width: 768px;
+  }
+
+  html .sunset {
+    width: 479px;
+    height: 192px;
+    grid-column: span 2;
+  }
+
+  html .ice-cream {
+    width: 229px;
+    height: 441px;
+    grid-row: span 2;
+  }
+
+  html .books {
+    width: 230px;
+    height: 230px;
+  }
+
+  html .tape {
+    width: 229px;
+    height: 568px;
+    grid-row: span 2;
+  }
+
+  html .street {
+    width: 479px;
+    height: 318px;
+    grid-column: span 2;
+  }
+
+  html .gallery {
+    display: grid;
+    gap: 20px;
+    width: 730px;
+    height: 780px;
+    grid-template-columns: repeat(auto-fill, 230px);
+    grid-template-rows: 192px;
+    margin-bottom: 60px;
+  }
+
+  html .header__subtitle {
+    width: 364px;
+    height: 117px;
+    position: relative;
+    left: 384px;
+    top: 144px;
+  }
+
+  html .header__title {
+    margin-top: 157px;
+    font-size: 120px;
+  }
+
+  html .footer__title {
+    font-size: 120px;
+  }
+
+  html .header__theme-menu-list {
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 186px 20px 0 0;
+  }
+
+  html .header__theme-menu-button {
+    margin: 5px 0;
+  }
+
+  html .content__text-card {
+    width: 728px;
+  }
+
+  html .content__text-container-row {
+    flex-direction: column;
+  }
+
+  html .content__text-card:nth-child(2) {
+    margin: 20px 0 0;
+  }
+
+  html .content__title {
+    width: 236px;
+  }
+
+  html .content__text-container-column {
+    min-width: 472px;
+    width: 472px;
+    margin-left: 20px;
+  }
+}
+
+@media (width <= 392px) {
+  html .content {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-top: 40px;
+  }
+
+  html .header {
+    width: 375px;
+    height: 668px;
+  }
+
+  html .footer {
+    width: 375px;
+    height: 668px;
+  }
+
+  html .page {
+    width: 375px;
+  }
+
+  html .sunset {
+    width: 355px;
+    height: 142px;
+    margin: 0;
+  }
+
+  html .ice-cream {
+    width: 355px;
+    height: 355px;
+    margin: 0;
+    grid-row-start: 2;
+  }
+
+  html .books {
+    width: 355px;
+    height: 355px;
+    margin: 0;
+    grid-row-start: 4;
+  }
+
+  html .tape {
+    width: 355px;
+    height: 237px;
+    margin: 0;
+    grid-row-start: 3;
+  }
+
+  html .street {
+    width: 355px;
+    height: 237px;
+    margin: 0;
+    grid-row-start: 5;
+  }
+
+  html .gallery {
+    display: grid;
+    gap: 10px;
+    width: 355px;
+    height: 1366px;
+    margin-bottom: 40px;
+    grid-template-columns: 355px;
+    grid-template-rows: none;
+  }
+
+  html .header__subtitle {
+    width: 355px;
+    height: 117px;
+    position: relative;
+    top: 55px;
+    left: 10px;
+  }
+
+  html .content__text-section_container:nth-child(2) {
+    margin-left: 0;
+  }
+
+  html .header__title {
+    margin-top: 61px;
+    height: 192px;
+    font-size: 116px;
+    line-height: 95.7px;
+    margin-left: 10px;
+  }
+
+  html .header__theme-menu-list {
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 69px 10px 0 0;
+  }
+
+  html .header__theme-menu-button {
+    margin: 5px 0;
+  }
+
+  html .content__text-card {
+    width: 355px;
+  }
+
+  html .content__text-container-row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  html .content__text-card:nth-child(2) {
+    margin: 0;
+  }
+
+  html .content__title {
+    width: 355px;
+  }
+
+  html .content__text-section_container {
+    flex-direction: column;
+    width: 355px;
+    margin-top: 50px;
+  }
+
+  html .content__text {
+    width: 355px;
+  }
+
+  html .content__text-block_title {
+    width: 355px;
+  }
+
+  html .content__text-container-column {
+    margin: 0;
+    min-width: 355px;
+    max-width: 355px;
+  }
+
+  html .content__text-section_container-column {
+    margin-top: 50px;
+  }
+
+  html .header:before {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  html .header:after {
+    right: 10px;
+    top: 10px;
+  }
+
+  html .header__REC {
+    right: 38px;
+    top: 10px;
+  }
+
+  html .header__REC:after {
+    top: 7px;
+    right: -19px;
+  }
+
+  html .margin-accent {
+    margin: 0;
+  }
+
+  html .content__gallery_title {
+    margin: 50px 0 10px;
+  }
+
+  html .footer:before {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  html .footer:after {
+    right: 10px;
+    top: 10px;
+  }
+
+  html .footer__title {
+    font-size: 116px;
+  }
+}
