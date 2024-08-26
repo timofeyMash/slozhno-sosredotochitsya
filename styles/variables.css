@@ -244,7 +244,7 @@
   html .header__theme-menu-list {
     align-items: flex-end;
     flex-direction: column;
-    padding-top: 69px;
+    padding-top: 59px;
   }
 
   html .header__theme-menu-button {
@@ -260,9 +260,12 @@
   }
 
   html .content__text-card:first-child {
-    padding-top: 20px;
+    margin-top: 0;
   }
 
+  html .content__text-card:last-child {
+    margin-top: 0;
+  }
   html .content__text-container-row {
     flex-direction: column;
     margin: 0;
@@ -295,6 +298,10 @@
     min-width: 0;
     width: 100%;
     max-width: 100%;
+  }
+
+  html .content__text-block_title:first-child {
+    margin-top: 20px;
   }
 
   html .content__text-container-column {
