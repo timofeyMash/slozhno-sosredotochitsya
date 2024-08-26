@@ -14,12 +14,12 @@
 
 @media (width <= 785px) and (width > 392px) {
   html .content {
-    width: 768px;
+    width: 100%;
+    max-width: 100%;
   }
 
   html .header {
-    width: 768px;
-    height: 1024px;
+    padding-bottom: 183px;
   }
 
   html .footer {
@@ -28,34 +28,39 @@
   }
 
   html .page {
-    width: 768px;
+    width: 100%;
   }
 
   html .sunset {
-    width: 479px;
+    max-width: 100%;
+    width: 100%;
     height: 192px;
     grid-column: span 2;
   }
 
   html .ice-cream {
-    width: 229px;
+    max-width: 100%;
+    width: 100%;
     height: 441px;
     grid-row: span 2;
   }
 
   html .books {
-    width: 230px;
+    max-width: 100%;
+    width: 100%;
     height: 230px;
   }
 
   html .tape {
-    width: 229px;
+    max-width: 100%;
+    width: 100%;
     height: 568px;
     grid-row: span 2;
   }
 
   html .street {
-    width: 479px;
+    max-width: 100%;
+    width: 100%;
     height: 318px;
     grid-column: span 2;
   }
@@ -63,9 +68,10 @@
   html .gallery {
     display: grid;
     gap: 20px;
-    width: 730px;
+    max-width: 100%;
+    width: 100%;
     height: 780px;
-    grid-template-columns: repeat(auto-fill, 230px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 192px;
     margin-bottom: 60px;
   }
@@ -73,14 +79,18 @@
   html .header__subtitle {
     width: 364px;
     height: 117px;
-    position: relative;
-    left: 384px;
-    top: 144px;
+    margin-left: 384px;
+    margin-top: 144px;
+  }
+
+  html .content__text-block_title {
+    width: 100%;
+    max-width: 100%;
   }
 
   html .header__title {
     margin-top: 157px;
-    font-size: 120px;
+    font-size: clamp(7.25rem, 7.0202rem + 0.978vw, 7.5rem);
   }
 
   html .footer__title {
@@ -98,11 +108,14 @@
   }
 
   html .content__text-card {
-    width: 728px;
+    width: 100%;
+    max-width: 100%;
   }
 
   html .content__text-container-row {
     flex-direction: column;
+    width: 100%;
+    max-width: 100%;
   }
 
   html .content__text-card:nth-child(2) {
@@ -114,9 +127,15 @@
   }
 
   html .content__text-container-column {
-    min-width: 472px;
-    width: 472px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     margin-left: 20px;
+  }
+
+  html .content__text {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -131,8 +150,7 @@
 
   html .header {
     /*width: 375px;*/
-    height: 668px;
-    padding: 10px;
+    padding: 10px 10px 66px;
   }
 
   html .footer {
@@ -143,7 +161,6 @@
   html .page {
     width: 100%;
     min-inline-size: 100%;
-    word-break: break-all;
   }
 
   html .sunset {
@@ -154,9 +171,9 @@
   }
 
   html .ice-cream {
+    height: 355px;
     max-width: 100%;
     width: 100%;
-    height: 355px;
     grid-row-start: 2;
   }
 
@@ -202,7 +219,6 @@
     height: 192px;
     font-size: clamp(2.5rem, -0.6667rem + 33.7778vw, 7.25rem);
     line-height: 95.7px;
-    word-break: normal;
   }
 
   html .header__theme-menu-list {
@@ -309,6 +325,11 @@
 
   html .footer__title {
     font-size: clamp(2.5rem, -0.6667rem + 33.7778vw, 7.25rem);
-    word-break: normal;
+  }
+}
+
+@media (width < 392px) {
+  html .page {
+    word-break: break-all;
   }
 }
