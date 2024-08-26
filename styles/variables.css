@@ -143,6 +143,7 @@
   html .page {
     width: 100%;
     min-inline-size: 100%;
+    word-break: break-all;
   }
 
   html .sunset {
@@ -194,13 +195,14 @@
 
   html .header__subtitle {
     max-width: 100%;
-    margin-top: 55px;
+    margin: 55px 0 0;
   }
   html .header__title {
     margin-top: 61px;
     height: 192px;
     font-size: clamp(2.5rem, -0.6667rem + 33.7778vw, 7.25rem);
     line-height: 95.7px;
+    word-break: normal;
   }
 
   html .header__theme-menu-list {
@@ -307,5 +309,6 @@
 
   html .footer__title {
     font-size: clamp(2.5rem, -0.6667rem + 33.7778vw, 7.25rem);
+    word-break: normal;
   }
 }
