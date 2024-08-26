@@ -19,7 +19,7 @@
   }
 
   html .header {
-    padding-bottom: 183px;
+    height: 1024px;
   }
 
   html .footer {
@@ -150,7 +150,8 @@
 
   html .header {
     /*width: 375px;*/
-    padding: 10px 10px 66px;
+    padding: 10px;
+    height: 668px;
   }
 
   html .footer {

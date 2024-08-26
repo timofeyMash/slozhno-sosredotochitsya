@@ -13,6 +13,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  height: 768px;
 }
 
 .header:before {
