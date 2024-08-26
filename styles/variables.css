@@ -23,7 +23,6 @@
   }
 
   html .footer {
-    width: 768px;
     height: 1024px;
   }
 
@@ -79,8 +78,7 @@
   html .header__subtitle {
     width: 364px;
     height: 117px;
-    margin-left: 384px;
-    margin-top: 144px;
+    margin-top: 162px;
   }
 
   html .content__text-block_title {
@@ -133,9 +131,19 @@
     margin-left: 20px;
   }
 
+  html .content__text-section_container {
+    max-width: 100%;
+  }
+
   html .content__text {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+@media (width > 392px) and (width < 785px) {
+  html .page {
+    word-break: break-all;
   }
 }
 
@@ -148,8 +156,12 @@
     padding: 0 10px;
   }
 
+  html .header__subtitle_position {
+    justify-content: normal;
+    padding: 0;
+  }
+
   html .header {
-    /*width: 375px;*/
     padding: 10px;
     height: 668px;
   }

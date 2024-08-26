@@ -2,9 +2,9 @@
 
 .page {
   font-family: IBM Plex Mono, sans-serif;
-  width: 1024px;
   background-color: var(--background-color);
   line-height: 23.4px;
+  width: 100%;
   background-attachment: fixed;
 }
 
@@ -14,6 +14,8 @@
   background-size: cover;
   position: relative;
   height: 768px;
+  max-width: 100%;
+  width: 100%;
 }
 
 .header:before {
@@ -109,6 +111,13 @@
   font-size: 18px;
   line-height: 23.4px;
   font-weight: bold;
+  margin-top: 114px;
+}
+
+.header__subtitle_position {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
 
 .title-decor {
@@ -128,7 +137,7 @@
 
 .content__text-container-column {
   margin-left: 13px;
-  min-width: 649px;
+  max-width: 649px;
 }
 
 .content__text-section_container:first-child {
@@ -146,6 +155,10 @@
   color: var(--text-title-color);
   font-size: 18px;
   margin-top: 20px;
+}
+
+.content__text-block_title:first-child {
+  margin-top: 0;
 }
 
 .content__text-container-row {
@@ -184,7 +197,8 @@
 }
 
 .content__text-card {
-  min-width: 315px;
+  max-width: 315px;
+  padding-top: 20px;
 }
 
 .content__text-card:nth-child(2) {
@@ -192,31 +206,36 @@
 }
 
 .sunset {
-  width: 649px;
+  max-width: 100%;
+  width: 100%;
   height: 260px;
   display: grid;
   grid-column: span 2;
 }
 
 .ice-cream {
-  width: 315px;
+  max-width: 100%;
+  width: 100%;
   height: 595px;
   grid-row: span 2;
 }
 
 .books {
-  width: 315px;
+  max-width: 100%;
+  width: 100%;
   height: 315px;
 }
 
 .tape {
-  width: 315px;
+  max-width: 100%;
+  width: 100%;
   height: 768px;
   grid-row: span 2;
 }
 
 .street {
-  width: 649px;
+  max-width: 100%;
+  width: 100%;
   height: 428px;
   grid-column: span 2;
 }
@@ -228,9 +247,10 @@
 .gallery {
   display: grid;
   gap: 20px;
-  width: 1024px;
+  max-width: 100%;
+  width: 100%;
   height: 1050px;
-  grid-template-columns: repeat(auto-fill, 315px);
+  grid-template-columns: repeat(3, 3fr);
   grid-template-rows:  260px;
   margin-bottom: 58px;
 }
