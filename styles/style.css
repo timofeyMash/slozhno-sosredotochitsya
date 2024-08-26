@@ -164,6 +164,7 @@
 .content__text-container-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .content__text {
