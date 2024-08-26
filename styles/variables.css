@@ -78,7 +78,7 @@
   html .header__subtitle {
     width: 364px;
     height: 117px;
-    margin-top: 162px;
+    margin-top: 146px;
   }
 
   html .content__text-block_title {
@@ -87,7 +87,7 @@
   }
 
   html .header__title {
-    margin-top: 157px;
+    margin-top: 155px;
     font-size: clamp(7.25rem, 7.0202rem + 0.978vw, 7.5rem);
   }
 
@@ -126,7 +126,7 @@
 
   html .content__text-container-column {
     width: 100%;
-    max-width: 100%;
+    max-width: 472px;
     min-width: 0;
     margin-left: 20px;
   }
@@ -144,6 +144,11 @@
 @media (width > 392px) and (width < 785px) {
   html .page {
     word-break: break-all;
+  }
+
+  html .content__text-container-column {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
