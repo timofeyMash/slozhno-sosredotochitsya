@@ -244,7 +244,7 @@
   object-fit: cover;
 }
 
-.gallery {
+.gallery__images {
   display: grid;
   gap: 20px;
   max-width: 100%;
@@ -297,4 +297,8 @@
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+.regular-weight {
+  font-weight: normal;
 }

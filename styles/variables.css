@@ -12,7 +12,7 @@
   --section-title-color: #ff0070;
 }
 
-@media (width <= 785px) and (width > 392px) {
+@media (width <= 785px) and (width > 375px) {
   html .content {
     width: 100%;
     max-width: 100%;
@@ -64,7 +64,7 @@
     grid-column: span 2;
   }
 
-  html .gallery {
+  html .gallery__images {
     display: grid;
     gap: 20px;
     max-width: 100%;
@@ -143,7 +143,7 @@
   }
 }
 
-@media (width > 392px) and (width < 785px) {
+@media (width > 375px) and (width < 768px) {
   html .page {
     word-break: break-all;
   }
@@ -154,7 +154,7 @@
   }
 }
 
-@media (width <= 392px) {
+@media (width <= 375px) {
   html .content {
     display: flex;
     flex-direction: column;
@@ -219,7 +219,7 @@
     padding-right: 10px;
   }
 
-  html .gallery {
+  html .gallery__images {
     display: grid;
     gap: 10px;
     max-width: 100%;
@@ -361,7 +361,7 @@
   }
 }
 
-@media (width < 392px) {
+@media (width < 374px) {
   html .page {
     word-break: break-all;
   }
