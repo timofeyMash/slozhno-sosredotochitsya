@@ -5,6 +5,7 @@
   width: 1024px;
   background-color: var(--background-color);
   line-height: 23.4px;
+  background-attachment: fixed;
 }
 
 .header {
@@ -104,9 +105,6 @@
 
 .header__subtitle {
   width: 491px;
-  position: relative;
-  left: 513px;
-  top: 114px;
   color: var(--text-title-color);
   font-size: 18px;
   line-height: 23.4px;
@@ -153,10 +151,6 @@
 .content__text-container-row {
   display: flex;
   flex-direction: row;
-}
-
-.content__text-container-column {
-  width: 649px;
 }
 
 .content__text {
