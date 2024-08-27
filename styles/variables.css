@@ -293,12 +293,12 @@
     top: 10px;
   }
 
-  html .header__REC {
+  html .header__rec {
     right: 38px;
     top: 10px;
   }
 
-  html .header__REC:after {
+  html .header__rec:after {
     top: 7px;
     right: -19px;
   }
