@@ -224,6 +224,10 @@
     margin-top: 20px;
   }
 
+  html .content__text-card:nth-child(2) {
+    margin: 0;
+  }
+
   html .content__text-card:first-child {
     margin-top: 0;
   }

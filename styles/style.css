@@ -270,3 +270,7 @@
 .regular-weight {
   font-weight: normal;
 }
+
+.content__text-block_container {
+  margin-top: 20px;
+}
