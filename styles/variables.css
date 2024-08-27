@@ -10,6 +10,8 @@
   --header-image: url("/images/cover-image-dark.png");
   --pseudo-corner: #ff0070;
   --section-title-color: #ff0070;
+  --text-title-color: #000028;
+  --rec-opacity: 1;
 }
 
 @media (width <= 785px) and (width > 375px) {
@@ -18,48 +20,30 @@
     max-width: 100%;
   }
 
-  html .header {
-    height: 1024px;
-  }
-
-  html .footer {
-    height: 1024px;
-  }
-
   html .page {
     width: 100%;
   }
 
   html .sunset {
-    max-width: 100%;
-    width: 100%;
     height: 192px;
     grid-column: span 2;
   }
 
   html .ice-cream {
-    max-width: 100%;
-    width: 100%;
     height: 441px;
     grid-row: span 2;
   }
 
   html .books {
-    max-width: 100%;
-    width: 100%;
     height: 230px;
   }
 
   html .tape {
-    max-width: 100%;
-    width: 100%;
     height: 568px;
     grid-row: span 2;
   }
 
   html .street {
-    max-width: 100%;
-    width: 100%;
     height: 318px;
     grid-column: span 2;
   }
@@ -69,7 +53,6 @@
     gap: 20px;
     max-width: 100%;
     width: 100%;
-    height: 780px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 192px;
     margin-bottom: 60px;
@@ -116,10 +99,6 @@
     flex-direction: column;
     width: 100%;
     max-width: 100%;
-  }
-
-  html .content__text-card:nth-child(2) {
-    margin: 20px 0 0;
   }
 
   html .content__title {
@@ -170,12 +149,10 @@
 
   html .header {
     padding: 10px;
-    height: 668px;
   }
 
   html .footer {
     width: 100%;
-    height: 668px;
   }
 
   html .page {
@@ -184,36 +161,26 @@
   }
 
   html .sunset {
-    max-width: 100%;
-    width: 100%;
     height: 142px;
     padding-right: 10px;
   }
 
   html .ice-cream {
     height: 355px;
-    max-width: 100%;
-    width: 100%;
     grid-row-start: 2;
   }
 
   html .books {
-    max-width: 100%;
-    width: 100%;
     height: 355px;
     grid-row-start: 4;
   }
 
   html .tape {
-    max-width: 100%;
-    width: 100%;
     height: 237px;
     grid-row-start: 3;
   }
 
   html .street {
-    max-width: 100%;
-    width: 100%;
     height: 237px;
     grid-row-start: 5;
     padding-right: 10px;
@@ -224,7 +191,6 @@
     gap: 10px;
     max-width: 100%;
     width: 100%;
-    height: 1366px;
     margin-bottom: 40px;
     grid-template-columns: 100%;
     grid-template-rows: none;
@@ -236,7 +202,6 @@
   }
   html .header__title {
     margin-top: 61px;
-    height: 192px;
     font-size: clamp(2.5rem, -0.6667rem + 33.7778vw, 7.25rem);
     line-height: 95.7px;
   }
@@ -271,10 +236,6 @@
     margin: 0;
     width: 100%;
     max-width: 100%;
-  }
-
-  html .content__text-card:nth-child(2) {
-    margin: 0;
   }
 
   html .content__title {
@@ -318,12 +279,12 @@
     max-width: 100%;
   }
 
-  html .header:before {
+  html .decorated-zone:before {
     left: 10px;
     bottom: 10px;
   }
 
-  html .header:after {
+  html .decorated-zone:after {
     right: 10px;
     top: 10px;
   }
@@ -344,16 +305,6 @@
 
   html .content__gallery_title {
     margin: 50px 0 10px;
-  }
-
-  html .footer:before {
-    left: 10px;
-    bottom: 10px;
-  }
-
-  html .footer:after {
-    right: 10px;
-    top: 10px;
   }
 
   html .footer__title {
