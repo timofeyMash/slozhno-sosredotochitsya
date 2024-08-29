@@ -14,6 +14,7 @@
   --section-title-color: #ff0070;
   --text-title-color: #000028;
   --rec-opacity: 1;
+  --border-hover-color: #FF007066;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +28,7 @@
     --section-title-color: #ff0070;
     --text-title-color: #000028;
     --rec-opacity: 1;
+    --border-hover-color: #FF007066;
   }
 }
 
