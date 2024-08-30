@@ -11,7 +11,7 @@
   --text-color: #353430;
   --background-color: #FFF1F7;
   --title-color: #FFC2E6;
-  --header-image: url("/images/cover-image-light.png");
+  --header-image: url("../images/cover-image-light.png");
   --pseudo-corner: #353430;
   --rec-opacity: 0;
   --border-hover-color: #32312D66;
@@ -23,7 +23,7 @@
     --text-color: #353430;
     --background-color: #FFF1F7;
     --title-color: #FFC2E6;
-    --header-image: url("/images/cover-image-light.png");
+    --header-image: url("../images/cover-image-light.png");
     --pseudo-corner: #353430;
     --section-title-color: #353430;
     --text-title-color: #353430;
