@@ -1,3 +1,13 @@
+/*@container card-grid (width <= 728px) {
+  .article__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}*/
+@container card-grid (width <= 728px) {
+  .article__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 @media (width <= 785px) and (width > 375px) {
   .content {
@@ -80,25 +90,13 @@
     padding: 0;
   }
 
-  .content__text-container-card {
-    display: unset;
-    width: 100%;
+  .section_container__title {
+    max-width: 236px;
+  }
+
+  .section_container {
     max-width: 100%;
-  }
-
-  .content__title {
-    width: 236px;
-  }
-
-  .content__text-section_content {
-    width: 100%;
-    max-width: 472px;
-    min-width: 0;
-    margin-left: 20px;
-  }
-
-  .content__text-section_container {
-    max-width: 100%;
+    grid-template-columns: minmax(0, 236px) 1fr;
   }
 
   .article__text {
@@ -110,11 +108,6 @@
 @media (width > 375px) and (width < 768px) {
   .page {
     word-break: break-all;
-  }
-
-  .content__text-section_content {
-    width: 100%;
-    max-width: 100%;
   }
 }
 
@@ -209,22 +202,14 @@
     margin-top: 0;
   }
 
-  .content__text-container-card {
-    display: unset;
+  .section_container__title {
     width: 100%;
     max-width: 100%;
   }
 
-  .content__title {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .content__text-section_container {
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 50px;
+  .section_container {
+   grid-template-columns: 1fr;
+   margin-top: 50px;
   }
 
   .article__text {
@@ -238,18 +223,7 @@
     max-width: 100%;
   }
 
-  .article__title:first-child {
-    margin-top: 20px;
-  }
-
-  .content__text-section_content {
-    margin: 0;
-    min-width: 0;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .content__text-section_container-column {
+  .section_container-column {
     margin-top: 50px;
     min-width: 0;
     width: 100%;
@@ -276,10 +250,6 @@
     right: -19px;
   }
 
-  .margin-accent {
-    margin: 0;
-  }
-
   .content__gallery_title {
     margin: 50px 0 10px;
   }
@@ -294,3 +264,4 @@
     word-break: break-all;
   }
 }
+
